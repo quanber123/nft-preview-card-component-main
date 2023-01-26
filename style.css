@@ -1,0 +1,186 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 375px;
+    width: 100%;
+}
+
+.container-flex {
+    background: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    margin: 3em 1em;
+    border-radius: 15px;
+}
+
+.container-flex-image-quilibrium {
+    height: 375px;
+    background: url('./images/image-equilibrium.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 1.2em 1.5em;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.container-flex-image-view{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    opacity: 0;
+}
+.container-flex-image-view:hover,
+.container-flex-image-view:active {
+    background: hsl(178, 100%, 50%);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.container-flex-title {
+    color: hsl(0, 0%, 100%);
+    margin: .5em 1em;
+}
+
+.container-flex-title:hover,
+.container-flex-title:active {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.container-flex-content {
+    width: 70%;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    padding: 0 1.5em;
+}
+
+.container-flex-parameter {
+    margin: 0 1.5em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.price-parameter {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.price-detail-parameter {
+    padding-left: .5em;
+    color: hsl(178, 100%, 50%);
+}
+
+.time-parameter {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.time-detail-parameter {
+    color: hsl(215, 51%, 70%);
+}
+
+.time-parameter img {
+    padding-right: 0.5em;
+}
+
+.container-flex-creator {
+    margin: 0 1.5em 1em 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.creator-image {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.info-creator {
+    padding-left: 1.5em;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.name-creator {
+    color: hsl(0, 0%, 100%);
+}
+
+.name-creator:hover,
+.name-creator:active {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.8em !important;
+}
+
+.attribution a{
+    color: hsl(0, 0%, 100%) !important;
+}
+@media(min-width: 600px) {
+    .container-flex {
+        width: 375px;
+        margin: 3em auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container-flex {
+        margin: 5em auto;
+    }
+}
