@@ -53,7 +53,7 @@ body {
     background: hsl(216, 50%, 16%);
     display: flex;
     flex-direction: column;
-    margin: 3em 1em;
+    margin: 2em 1em;
     border-radius: 15px;
 }
 
@@ -62,7 +62,7 @@ body {
     background: url('./images/image-equilibrium.jpg');
     background-size: cover;
     background-position: center;
-    margin: 1.2em 1.5em;
+    margin: 1.5em 1.5em;
     border-radius: 15px;
     object-fit: cover;
 }
